@@ -1,28 +1,32 @@
 .container {
-  max-width: 400px;
+  background-color: #fff;
   margin: 60px auto;
-  padding: 8px;
-  border-radius: 8px;
+  min-height: 70vh;
+  max-width: 400px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 32px 24px;
+  border-radius: 12px;
   text-align: center;
 
 }
 
-h1 {
+& h1 {
   margin-bottom: 8px;
 }
 
-p { 
+& p { 
   margin-bottom: 24px;
 }
 
-.input-area {
+& .input-area {
   display: flex;
   gap: 8px;
   justify-content: center;
   margin-bottom: 16px;
 }
 
-input {
+& input {
   flex: 1;
   padding: 8px;
   border: none;
@@ -32,7 +36,7 @@ input {
   outline: none;
 }
 
-button {
+& button {
   background-color: var(--primary-color);
   color: #fff;
   padding: 8px;
@@ -43,11 +47,11 @@ button {
   cursor: pointer; 
 }
 
-button:hover {
+& button:hover {
   background-color: var(--danger-hover);
 }
 
-li {
+& li {
   background-color: var(--bg-color);
   padding: 8px;
   border-radius: 8px;
@@ -57,12 +61,12 @@ li {
   align-items: center;
 }
 
-li.checked {
+.done {
   text-decoration: line-through;
   color: var(--text-color-muted);
 }
 
-.remove-btn {
+.removeBtn {
   background-color: var(--danger-color);
   color: white;
   border: none;
@@ -72,6 +76,6 @@ li.checked {
   cursor: pointer
 }
 
-.remove-btn:hover {
+.removeBtn:hover {
   background-color: #dc2626;
 }
