@@ -1,40 +1,48 @@
 const input = document.getElementById("item-input");
-const addBtn = document.getElementById("add-btn");
+const button = document.getElementById("button");
 const list = document.getElementById("list");
 
+  function adicionarItem() {
+   const itemText = input.value.trim ();
 
-addBtn.addEventListener("click", () => {
- const itemText = input.value.trim ();
+   if (itemText !== "") {
+   const li = document.createElement("li");
 
- 
+   const textElemnt = document.createElement("span");
+   textElemnt.textContent = itemText;
 
-if (itemText !== "") {
-const li = document.createElement("li");
-li.textContent = itemText;
+   const removeBtn = document.createElement("button");
+   removeBtn.textContent = "Remover";
+   removeBtn.classList.add("remove-btn");
 
-const removeBtn = document.createElement("button");
-removeBtn.textContent = "Remover";
-removeBtn.classList.add("remove-btn");
+   textElemnt.addEventListener("click", () => {
+   textElemnt.classList.toggle("checked");
+   });
 
-
-li.addEventListener("click", () => {
- li.classList.toggle("checked");
-});
-
-removeBtn.addEventListener("click", (event) => {
-  event.stopPropagation();
+  removeBtn.addEventListener("click", (event) => {
+   event.stopPropagation();
   li.remove();
-}
-)
+  });
 
-li.appendChild(removeBtn);
+  li.appendChild(textElemnt);
+  li.appendChild(removeBtn);
 
-list.appendChild(li);
+  list.appendChild(li);
+  
 
-input.value = "";
 
-input.focus();
+  input.value = "";
+  input.focus();
+   
+    }
+ }
 
-}
+  button.addEventListener("click", () => {
+  adicionarItem(); 
+  });
 
-});
+ input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      adicionarItem();
+    }
+  }); 

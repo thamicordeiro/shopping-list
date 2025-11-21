@@ -28,6 +28,7 @@
  --text-sm: 0.875rem;
  --text-base: 1rem;
  --text-lg: 1.5rem;
+ --text-xlg: 2rem;
 
 }
 
@@ -40,9 +41,11 @@ body {
 
 h1 {
 color: var(--text-color-primary);
-font-size: var(--text-lg);
+font-size: var(--text-xlg);
 }
 
 input::placeholder {
   color: var(--text-color-muted);
 }
+
+
