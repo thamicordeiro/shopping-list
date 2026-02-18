@@ -1,29 +1,33 @@
-Quicklist 📝
+# 🛒 Quick List
 
-Este é o meu primeiro projeto utilizando JavaScript básico para criar uma aplicação simples, uma lista de compras.
+Projeto desenvolvido para treinar **JavaScript na prática**, sendo minha primeira aplicação criada de forma independente, com foco em manipulação do DOM e interação com o usuário.
 
-Com a idéia de treinar a manipulação do DOM, eventos e prática geral de JS, e o resultado foi um mini-app onde o usuário pode:
+---
 
-- Adicionar itens à lista
+## 🚀 Tecnologias
 
-- Marcar itens como concluídos (com risco no texto)
+* HTML
+* CSS
+* JavaScript
+* Git e GitHub
 
-- Remover itens individualmente
+---
 
-- Forma dinâmica
+## ⚙️ Funcionalidades
 
-O projeto é bem simples, mas foi muito importante para eu entender como o JavaScript manipula elementos da página e como pequenos detalhes fazem diferença na experiência do usuário.
+✔️ Adicionar itens na lista
+✔️ Remover itens
+✔️ Atualização em tempo real
+✔️ Validação de camp
 
-Também pratiquei HTML, CSS, organização do layout de forma simples, tentando deixar algo mais limpo e agradável.
 
-Tecnologias usadas: 
+ 
+##  Preview   
+<img width="991" height="770" alt="image" src="https://github.com/user-attachments/assets/c4ce0540-ea10-4c35-9d54-f9b95b1f1145" />
 
-- HTML
+--- 
+ 
+## 📎 Acesse o projeto   
+👉 https://thamicordeiro.github.io/shopping-list/
 
-- CSS
-
-- JavaScript (DOM, eventos, criação de elementos)
-
-📸 Prévia do projeto
-
-<img width="1023" height="753" alt="image" src="https://github.com/user-attachments/assets/990dc963-821f-4054-b9a8-847002526cce" />
+ 
